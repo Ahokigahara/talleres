@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.talleres.ui.home.HomeMapsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_service"
+        android:name="com.example.talleres.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_listview"/>
+
+    <fragment
+        android:id="@+id/usuarioIniciarSesion"
+        android:name="com.example.talleres.ui.usuario.UserFragment"
+        android:label="@string/usuario"
+        tools:layout="@layout/fragment_iniciar_sesion">
+        <action
+            android:id="@+id/action_iniciosesion_a_registro"
+            app:destination="@id/nav_registroUsuario" />
+    </fragment>
+
+
+    <fragment
+    android:id="@+id/nav_registroUsuario"
+    android:name="com.example.talleres.ui.usuario.UserRegistroFragment"
+    android:label="@string/usuario"
+    tools:layout="@layout/fragment_registro">
+
+</fragment>
+    <fragment
+        android:id="@+id/infomarker"
+        android:name="com.example.talleres.ui.infoMarker.InfoWindowFragment"
+        android:label="Informacion del taller"
+        tools:layout="@layout/content_info_window_marker">
+
+        <argument
+            android:name="nombre taller"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="informacion taller"
+            app:argType="string[]" />
+    </fragment>
+
+</navigation>

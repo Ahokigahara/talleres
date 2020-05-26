@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1076474575347",
+    "firebase_url": "https://taller-motos-bogota.firebaseio.com",
+    "project_id": "taller-motos-bogota",
+    "storage_bucket": "taller-motos-bogota.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076474575347:android:fa90bc7659a7c201e7ba86",
+        "android_client_info": {
+          "package_name": "com.example.talleres"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076474575347-u4vu7r59gqsc0kj8svok79om16t40c36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDblGq8DR4l9z7ok4uhkt39aM7ZHihP8ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076474575347-u4vu7r59gqsc0kj8svok79om16t40c36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

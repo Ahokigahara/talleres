@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Talleres</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="title_activity_maps">Talleres para Motos</string>
+    <string name="title_iniciar_sesion">Iniciar Sesión</string>
+    <string name="title_registro">Crear Cuenta</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="usuario">Usuario</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="menu_servicios">Servicios</string>
+    <string name="menu_informacion">Información</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="menu_home">Talleres para Motos</string>
+    <string name="title_activity_info_window_marker">InfoWindowMarker</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
