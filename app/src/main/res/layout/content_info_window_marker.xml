@@ -1,49 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary" >
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:scrollbars="vertical">
+
 
     <TextView
         android:id="@+id/titulo_taller"
-        android:layout_width="385dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/telefono"
-        android:layout_width="384dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="132dp"
-        android:inputType="phone"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/direccion"
-        android:layout_width="384dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="80dp"
-        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <LinearLayout
+        android:layout_width="457dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/titlecoments"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="499dp" />
+
+        <Button
+            android:id="@+id/btn_adicionar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:background="@drawable/bordes_redondos"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="491dp" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lvcomments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+
+</LinearLayout>
+

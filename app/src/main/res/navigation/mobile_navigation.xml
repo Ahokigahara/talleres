@@ -22,6 +22,14 @@
         tools:layout="@layout/fragment_listview"/>
 
     <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.talleres.ui.info.InfoFragment"
+        android:label="@string/menu_informacion"
+        tools:layout="@layout/fragment_info">
+
+
+    </fragment>
+    <fragment
         android:id="@+id/usuarioIniciarSesion"
         android:name="com.example.talleres.ui.usuario.UserFragment"
         android:label="@string/usuario"
@@ -31,6 +39,12 @@
             app:destination="@id/nav_registroUsuario" />
     </fragment>
 
+    <fragment
+        android:id="@+id/iniciarSesion"
+        android:name="com.example.talleres.ui.usuario.UserFragment"
+        android:label="@string/usuario"
+        tools:layout="@layout/fragment_iniciar_sesion">
+    </fragment>
 
     <fragment
     android:id="@+id/nav_registroUsuario"

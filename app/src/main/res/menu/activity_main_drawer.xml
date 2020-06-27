@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    android:background="@color/colorPrimary">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:background="@color/colorPrimary">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/map"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_service"
-            android:icon="@drawable/servicio1"
+            android:icon="@drawable/icon"
             android:title="@string/menu_servicios" />
         <item
             android:id="@+id/nav_info"

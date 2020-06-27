@@ -7,6 +7,9 @@ public class Servicio {
     private String nombre;
     private int telefono;
 
+    public Servicio(){
+
+    }
     public Servicio(int grupo, String nombre, int telefono) {
         this.grupo = grupo;
         this.nombre = nombre;

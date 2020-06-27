@@ -1,17 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:background="#000000">
+    android:background="#FFC107"
+    android:orientation="horizontal"
+    android:padding="8dp">
 
+    <ImageView
+        android:id="@+id/iconoheader"
+        android:layout_width="72dp"
+        android:layout_height="62dp" />
 
     <TextView
         android:id="@+id/lblListHeader"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="335dp"
+        android:layout_height="64dp"
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
-        android:textSize="17dp"
-        android:textColor="#f9f93d" />
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
 
 </LinearLayout>
