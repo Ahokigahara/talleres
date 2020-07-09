@@ -59,6 +59,18 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = infalInflater.inflate(R.layout.fragment_card, null);
+            convertView.setOnClickListener(v -> {
+
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+servicio.getTelefono()));
+                    _context.startActivity(i);
+                /*if (ActivityCompat.checkSelfPermission(_context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(_context, "click", Toast.LENGTH_SHORT).show();
+
+                }else{
+                    Toast.makeText(_context, "click2", Toast.LENGTH_SHORT).show();
+                }*/
+            });
         }
 
         TextView txtListChild = (TextView) convertView
