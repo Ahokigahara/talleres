@@ -54,14 +54,6 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.ConnectionCallbacks,
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
-        /*val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }*/
-
-
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -79,10 +71,12 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.ConnectionCallbacks,
 
 
     private fun checkPermissions() {
+
         if (ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.CALL_PHONE)
             != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this@MainActivity,
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),1)
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.CALL_PHONE),1)
         }else  if (ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.ACCESS_FINE_LOCATION)
             == PackageManager.PERMISSION_GRANTED) {
             val bundle = Bundle()
@@ -91,6 +85,7 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.ConnectionCallbacks,
             val navController = findNavController(R.id.nav_host_fragment)
             navController.navigate(R.id.nav_home,bundle)
         }
+
     }
 
 

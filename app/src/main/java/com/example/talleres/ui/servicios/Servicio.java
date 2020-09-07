@@ -5,12 +5,12 @@ public class Servicio {
 
     private int grupo;
     private String nombre;
-    private int telefono;
+    private double telefono;
 
     public Servicio(){
 
     }
-    public Servicio(int grupo, String nombre, int telefono) {
+    public Servicio(int grupo, String nombre, double telefono) {
         this.grupo = grupo;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -32,11 +32,11 @@ public class Servicio {
         this.nombre = nombre;
     }
 
-    public int getTelefono() {
+    public double getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(double telefono) {
         this.telefono = telefono;
     }
 }
